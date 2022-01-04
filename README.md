@@ -15,6 +15,8 @@ Redux Toolkit Tutorial (explains fundamental redux as well)
 - @material-ui/core
 - @material-ui/icons
 
+if any dependancies are giving issues use 'npm audit --fix'
+
 ---
 
 [2] setup project file structure
