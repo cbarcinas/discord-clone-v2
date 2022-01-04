@@ -1,48 +1,51 @@
-.chat {
+.chatHeader {
   display: flex;
-  flex-direction: column;
-  flex: 0.75;
-  background-color: #363a3f;
-  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  padding: 10px;
 }
 
-.chat__input {
-  color: lightgray;
+.chatHeader__hash {
+  color: gray;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.chatHeader__left > h3 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin: 20px;
-  border-top: 1px solid gray;
-  background-color: #474b53;
+  color: white;
 }
 
-.chat__input > form > input {
-  padding: 15px;
+.chatHeader__right {
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+  justify-content: space-between;
+}
+
+.chatHeader__right > .MuiSvgIcon-root {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.chatHeader__right > .MuiSvgIcon-root:hover {
+  color: white;
+}
+
+.chatHeader__search {
+  display: flex;
+  align-items: center;
+  color: gray;
+  background-color: #2f3135;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.chatHeader__search > input {
   background: transparent;
-  border: none;
-  width: 100%;
   outline-width: 0;
   color: white;
-  font-size: large;
-}
-
-.chat__input > form {
-  flex: 1;
-}
-
-.chat__inputButton {
-  display: none;
-}
-
-.chat__inputIcons > .MuiSvgIcon-root {
-  padding: 5px;
-}
-
-.chat__messages {
-  flex: 1;
-  /* since we are using a flex columnlayout in our
-    .chat div, if we give the middle div flex: 1, it 
-    will push the other divs outward. */
+  border: none;
 }
