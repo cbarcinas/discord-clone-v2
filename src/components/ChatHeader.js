@@ -10,13 +10,16 @@ import HelpRoundedIcon from "@material-ui/icons/HelpRounded";
 const ChatHeader = () => {
   return (
     <div className="chatHeader">
+      {/* Chat Header Left */}
+      {/* The left side will contain our channel name */}
       <div className="chatHeader__left">
         <h3>
           <span className="chatHeader__hash">#</span>
           Channel Name
         </h3>
       </div>
-
+      {/* Chat Header Right */}
+      {/* The right side will contain the user's access icons */}
       <div className="chatHeader__right">
         <NotificationsIcon />
         <EditLocationRoundedIcon />
