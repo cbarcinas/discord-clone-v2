@@ -1,10 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const userSlice = createSlice({
+  // a name, used in action types
   name: "user",
+  // the initial state of the reducer
   initialState: {
     user: null,
   },
+  // an object of 'case reducers'
   reducers: {
     login: (state, action) => {
       state.user = action.payload;
