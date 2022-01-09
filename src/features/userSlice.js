@@ -15,16 +15,17 @@ export const userSlice = createSlice({
       state.user = action.payload;
     },
     logout: (state) => {
-      //to logout we just need to set the user to null
-      state.user = null;
+      state.user = null; //to logout we just need to set the user to null
     },
   },
 });
 
-// we are exporting login & logout so that they can be
-// used anywhere in our application
+// we are exporting login & logout so that they can
+// be used anywhere in our application
 export const { login, logout } = userSlice.actions;
 
+// we select state.user.user bc we are accessing our
+// slice named 'user' then the state named 'user'
 export const selectUser = (state) => state.user.user;
 
 export default userSlice.reducer;
