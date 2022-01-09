@@ -9,6 +9,8 @@ export const userSlice = createSlice({
   },
   // an object of 'case reducers'
   reducers: {
+    // these functions are intended to handle a specific action type
+    // these functions (login / logout) are equivalent to a case statement in a switch
     login: (state, action) => {
       state.user = action.payload;
     },
