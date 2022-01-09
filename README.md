@@ -14,6 +14,7 @@ Redux Toolkit Tutorial (explains fundamental redux as well)
 - @reduxjs/toolkit
 - @material-ui/core
 - @material-ui/icons
+- firebase
 
 if any dependancies are giving issues use 'npm audit --fix'
 
