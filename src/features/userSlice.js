@@ -12,7 +12,7 @@ export const userSlice = createSlice({
     // these functions are intended to handle a specific action type
     // these functions (login / logout) are equivalent to a case statement in a switch
     login: (state, action) => {
-      state.user = action.payload;
+      state.user += action.payload;
     },
     logout: (state) => {
       state.user = null; //to logout we just need to set the user to null
